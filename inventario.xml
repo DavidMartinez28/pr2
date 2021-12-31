@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inventario[
+        <!ELEMENT inventario (equipos+, usuarios+, prestamos+)>
+
+        <!ELEMENT equipos (id_equipo, tipo, marca, usoEquipo, SO, hardware, software)>
+            <!ELEMENT SO (nombre_SO, version_SO)>
+            <!ELEMENT hardware (procesador, cant_Memoria, discoDuro, pantalla)>
+                <!ELEMENT cant_Memoria (velocidad)>
+                <!ELEMENT discoDuro (tipo_dd, cap_dd)>
+                <!ELEMENT pantalla (diagonal, resolución)>
+            <!ELEMENT software (licencia_pago, licencia_libre)>
+                <!ELEMENT licencia_pago (nombre_soft, version_soft, tipo_soft)>
+                <!ELEMENT licencia_libre (nombre_soft, version_soft)>
+
+        <!ELEMENT usuarios (id_usuario, nombre_usr, departamento_usr, telContacto, email, ubicacion)>
+
+        <!ELEMENT prestamos (id_prestamo, usuario_prest, equipo_prest,fechaInicio, fechaFin, fechaRealDev?, comentarios+)>
+            <!ELEMENT usuario_prest (id_usuario)>
+            <!ELEMENT equipo_prest (id_equipo)>
+
+        <!ELEMENT id_equipo (#PCDATA)>
+        <!ELEMENT tipo (#PCDATA)>
+        <!ELEMENT marca (#PCDATA)>
+        <!ELEMENT usoEquipo (#PCDATA)>
+
+        <!ELEMENT nombre_SO (#PCDATA)>
+        <!ELEMENT version_SO (#PCDATA)>
+
+        <!ELEMENT procesador (#PCDATA)>
+        <!ELEMENT velocidad (#PCDATA)>
+        <!ELEMENT tipo_dd (#PCDATA)>
+        <!ELEMENT cap_dd (#PCDATA)>
+
+        <!ELEMENT diagonal (#PCDATA)>
+        <!ELEMENT resolución (#PCDATA)>
+
+        <!ELEMENT nombre_soft (#PCDATA)>
+        <!ELEMENT version_soft (#PCDATA)>
+        <!ELEMENT tipo_soft (#PCDATA)>
+
+        <!ELEMENT id_usuario (#PCDATA)>
+        <!ELEMENT nombre_usr (#PCDATA)>
+        <!ELEMENT departamento_usr (#PCDATA)>
+        <!ELEMENT telContacto (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT ubicacion (#PCDATA)>
+
+        <!ELEMENT id_prestamo (#PCDATA)>
+        <!ELEMENT fechaInicio (#PCDATA)>
+        <!ELEMENT fechaFin (#PCDATA)>
+        <!ELEMENT fechaRealDev (#PCDATA)>
+        <!ELEMENT comentarios (#PCDATA)>
+
+        ]>
+
+<inventario>
+    <equipos>
+        <id_equipo>2345</id_equipo>
+        <tipo>Portátil</tipo>
+        <marca>ASUS</marca>
+        <usoEquipo>Desarrollo</usoEquipo>
+        <SO>
+            <nombre_SO>Windows</nombre_SO>
+            <version_SO>11</version_SO>
+        </SO>
+        <hardware>
+            <procesador>Intel i9</procesador>
+            <cant_Memoria>
+                <velocidad>100</velocidad>
+            </cant_Memoria>
+            <discoDuro>
+                <tipo_dd>sdd</tipo_dd>
+                <cap_dd>1 Tb</cap_dd>
+            </discoDuro>
+            <pantalla>
+                <diagonal>24</diagonal>
+                <resolución>1920x1080</resolución>
+            </pantalla>
+        </hardware>
+        <software>
+            <licencia_pago>
+                <nombre_soft>Office365</nombre_soft>
+                <version_soft>20.3.4</version_soft>
+                <tipo_soft>Ofimatica</tipo_soft>
+            </licencia_pago>
+            <licencia_libre>
+                <nombre_soft>LibreOffice</nombre_soft>
+                <version_soft>14.2.1</version_soft>
+            </licencia_libre>
+        </software>
+    </equipos>
+
+    <usuarios>
+        <id_usuario>28391</id_usuario>
+        <nombre_usr>José Jimenéz</nombre_usr>
+        <departamento_usr>Desarrollo</departamento_usr>
+        <telContacto>688453291</telContacto>
+        <email>j.jimenez@gmail.com</email>
+        <ubicacion>Módulo 3</ubicacion>
+    </usuarios>
+
+    <prestamos>
+        <id_prestamo>2</id_prestamo>
+        <usuario_prest>
+            <id_usuario>28391</id_usuario>
+        </usuario_prest>
+        <equipo_prest>
+            <id_equipo>2345</id_equipo>
+        </equipo_prest>
+        <fechaInicio>11/10/2021</fechaInicio>
+        <fechaFin>24/11/2021</fechaFin>
+        <comentarios>Tiene que entregarlo en el plazo y con buen estado, no como lo última vez.</comentarios>
+    </prestamos>
+
+</inventario>
