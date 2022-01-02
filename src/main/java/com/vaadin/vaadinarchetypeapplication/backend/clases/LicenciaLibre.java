@@ -1,12 +1,13 @@
 
-package com.pr2;
+package com.vaadin.vaadinarchetypeapplication.backend.clases;
+
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class LicenciaPago {
+public class LicenciaLibre {
 
     @SerializedName("nombre_soft")
     @Expose
@@ -14,28 +15,23 @@ public class LicenciaPago {
     @SerializedName("version_soft")
     @Expose
     private String versionSoft;
-    @SerializedName("tipo_soft")
-    @Expose
-    private String tipoSoft;
 
     /**
      * No args constructor for use in serialization
      * 
      */
-    public LicenciaPago() {
+    public LicenciaLibre() {
     }
 
     /**
      * 
      * @param versionSoft
-     * @param tipoSoft
      * @param nombreSoft
      */
-    public LicenciaPago(String nombreSoft, String versionSoft, String tipoSoft) {
+    public LicenciaLibre(String nombreSoft, String versionSoft) {
         super();
         this.nombreSoft = nombreSoft;
         this.versionSoft = versionSoft;
-        this.tipoSoft = tipoSoft;
     }
 
     public String getNombreSoft() {
@@ -46,7 +42,7 @@ public class LicenciaPago {
         this.nombreSoft = nombreSoft;
     }
 
-    public LicenciaPago withNombreSoft(String nombreSoft) {
+    public LicenciaLibre withNombreSoft(String nombreSoft) {
         this.nombreSoft = nombreSoft;
         return this;
     }
@@ -59,21 +55,8 @@ public class LicenciaPago {
         this.versionSoft = versionSoft;
     }
 
-    public LicenciaPago withVersionSoft(String versionSoft) {
+    public LicenciaLibre withVersionSoft(String versionSoft) {
         this.versionSoft = versionSoft;
-        return this;
-    }
-
-    public String getTipoSoft() {
-        return tipoSoft;
-    }
-
-    public void setTipoSoft(String tipoSoft) {
-        this.tipoSoft = tipoSoft;
-    }
-
-    public LicenciaPago withTipoSoft(String tipoSoft) {
-        this.tipoSoft = tipoSoft;
         return this;
     }
 

@@ -1,62 +1,57 @@
 {
-    "inventario": [
-        {},
-        {
-            "equipos": {
-                "id_equipo": "2345",
-                "tipo": "Portátil",
-                "marca": "ASUS",
-                "usoEquipo": "Desarrollo",
-                "SO": {
-                    "nombre_SO": "Windows",
-                    "version_SO": "11"
-                },
-                "hardware": {
-                    "procesador": "Intel i9",
-                    "cant_Memoria": {
-                        "velocidad": "100"
-                    },
-                    "discoDuro": {
-                        "tipo_dd": "sdd",
-                        "cap_dd": "1 Tb"
-                    },
-                    "pantalla": {
-                        "diagonal": "24",
-                        "resolución": "1920x1080"
-                    }
-                },
-                "software": {
-                    "licencia_pago": {
-                        "nombre_soft": "Office365",
-                        "version_soft": "20.3.4",
-                        "tipo_soft": "Ofimatica"
-                    },
-                    "licencia_libre": {
-                        "nombre_soft": "LibreOffice",
-                        "version_soft": "14.2.1"
-                    }
-                }
-            },
-            "usuarios": {
-                "id_usuario": "28391",
-                "nombre_usr": "José Jimenéz",
-                "departamento_usr": "Desarrollo",
-                "telContacto": "688453291",
-                "email": "j.jimenez@gmail.com",
-                "ubicacion": "Módulo 3"
-            },
-            "prestamos": {
-                "id_prestamo": "2",
-                "usuario_prest": {
-                    "id_usuario": "28391"
-                },
-                "equipo_prest": {
-                    "id_equipo": "2345"
-                },
-                "fechaInicio": "11/10/2021",
-                "fechaFin": "24/11/2021",
-                "comentarios": "Tiene que entregarlo en el plazo y con buen estado, no como lo última vez."
-            }
-        }
-    ]
-}
+    "equipos": {
+       "id_equipo": "2345",
+       "tipo": "Portátil",
+       "marca": "ASUS",
+       "usoEquipo": "Desarrollo",
+       "SO": {
+          "nombre_SO": "Windows",
+          "version_SO": "11"
+       },
+       "hardware": {
+          "procesador": "Intel i9",
+          "cant_Memoria": {
+             "velocidad": "100"
+          },
+          "discoDuro": {
+             "tipo_dd": "sdd",
+             "cap_dd": "1 Tb"
+          },
+          "pantalla": {
+             "diagonal": "24",
+             "resolución": "1920x1080"
+          }
+       },
+       "software": {
+          "licencia_pago": {
+             "nombre_soft": "Office365",
+             "version_soft": "20.3.4",
+             "tipo_soft": "Ofimatica"
+          },
+          "licencia_libre": {
+             "nombre_soft": "LibreOffice",
+             "version_soft": "14.2.1"
+          }
+       }
+    },
+    "usuarios": {
+       "id_usuario": "28391",
+       "nombre_usr": "José Jimenéz",
+       "departamento_usr": "Desarrollo",
+       "telContacto": "688453291",
+       "email": "j.jimenez@gmail.com",
+       "ubicacion": "Módulo 3"
+    },
+    "prestamos": {
+       "id_prestamo": "2",
+       "usuario_prest": {
+          "id_usuario": "28391"
+       },
+       "equipo_prest": {
+          "id_equipo": "2345"
+       },
+       "fechaInicio": "11/10/2021",
+       "fechaFin": "24/11/2021",
+       "comentarios": "Tiene que entregarlo en el plazo y con buen estado, no como lo última vez."
+    }
+ }

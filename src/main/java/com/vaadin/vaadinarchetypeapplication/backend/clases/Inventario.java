@@ -1,12 +1,13 @@
 
-package com.pr2;
+package com.vaadin.vaadinarchetypeapplication.backend.clases;
+
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class Inventario__1 {
+public class Inventario {
 
     @SerializedName("equipos")
     @Expose
@@ -22,7 +23,7 @@ public class Inventario__1 {
      * No args constructor for use in serialization
      * 
      */
-    public Inventario__1() {
+    public Inventario() {
     }
 
     /**
@@ -31,7 +32,7 @@ public class Inventario__1 {
      * @param prestamos
      * @param equipos
      */
-    public Inventario__1(Equipos equipos, Usuarios usuarios, Prestamos prestamos) {
+    public Inventario(Equipos equipos, Usuarios usuarios, Prestamos prestamos) {
         super();
         this.equipos = equipos;
         this.usuarios = usuarios;
@@ -46,7 +47,7 @@ public class Inventario__1 {
         this.equipos = equipos;
     }
 
-    public Inventario__1 withEquipos(Equipos equipos) {
+    public Inventario withEquipos(Equipos equipos) {
         this.equipos = equipos;
         return this;
     }
@@ -59,7 +60,7 @@ public class Inventario__1 {
         this.usuarios = usuarios;
     }
 
-    public Inventario__1 withUsuarios(Usuarios usuarios) {
+    public Inventario withUsuarios(Usuarios usuarios) {
         this.usuarios = usuarios;
         return this;
     }
@@ -72,7 +73,7 @@ public class Inventario__1 {
         this.prestamos = prestamos;
     }
 
-    public Inventario__1 withPrestamos(Prestamos prestamos) {
+    public Inventario withPrestamos(Prestamos prestamos) {
         this.prestamos = prestamos;
         return this;
     }

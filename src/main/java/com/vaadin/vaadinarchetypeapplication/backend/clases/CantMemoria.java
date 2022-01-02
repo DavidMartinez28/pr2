@@ -1,5 +1,5 @@
 
-package com.pr2;
+package com.vaadin.vaadinarchetypeapplication.backend.clases;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
